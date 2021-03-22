@@ -3,23 +3,146 @@
 
 <head>
     <title>Social Media Icons mit Font Awesome</title>
+
+    <style>
+        /*
+        RESET
+        */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /*
+        BASIC STYLES
+        */
+
+        hr {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .copyright {
+            padding: 1em;
+            font-family: sans-serif;
+            font-size: 0.6em;
+            line-height: 1.3;
+        }
+
+        /*
+        Standardfarbe für Text und Links: dunles kühles Grau
+        */
+        body,
+        a {
+            color: hsl(200, 21%, 34%);
+        }
+
+        /*
+        Standard Rollover Farbe für Links und Icons: helles kühles Grau
+        */
+        a:hover {
+            color: hsl(200, 21%, 89%);
+        }
+
+        .my-social-media-links {
+            width: 8em;
+            font-size: 2em;
+            /*Standardgröße klein*/
+            margin: 2rem auto;
+            background: hsl(200, 21%, 76%);
+            padding: 0.5em 0 0.5em 0.7em;
+            border-radius: 0.5em;
+
+        }
+
+        .my-social-media-links a {
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+
+
+
+
+        /*
+        VARIATIONS
+        */
+
+
+        .green a {
+            color: hsl(100, 55%, 34%);
+        }
+
+        .green a:hover {
+            color: hsl(100, 89%, 55%);
+        }
+
+
+        .red a {
+            color: hsl(0, 76%, 34%);
+        }
+        
+        .red a:hover {
+            color: hsl(0, 89%, 55%);
+        }   
+        
+
+        .medium {
+            width: 6em;
+            font-size: 3em;
+        }
+
+        .big {
+            width: 4em;
+            font-size: 4em;
+        }
+
+    </style>
+
+
+
 </head>
 
 <body>
 
-    <div class="sonko-social-media-links">
-        <a href="https://music.apple.com/us/album/kamariaa-single/1554316853" target="_blank" rel="noopener">
-            <i class="fab fa-apple"></i>
+    <div class="my-social-media-links red">
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-square"></i>
         </a>
-        
-        <a href="https://www.amazon.com/s?k=sonkomusic" target="_blank" rel="noopener"><i class="fab fa-amazon"></i>
+
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram-square"></i>
         </a>
-        <a href="https://open.spotify.com/album/2OKp29YYe3sipxFHz4wKPn" target="_blank" rel="noopener"><i class="fab fa-spotify"></i></a>
-        <a href="https://www.instagram.com/_sonkomusic/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/sonko01094193" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.deezer.com/search/sonkomusic" target="_blank" rel="noopener"><i class="fab fa-deezer"></i></a>
+
+
+        <a href="https://www.twitter.com/" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.xing.com/" target="_blank">
+            <i class="fab fa-xing-square"></i>
+        </a>
+
     </div>
 
+    <hr>
+
+    <p class="copyright">
+        Demo and Code &copy; 2021 Enno Hyttrek. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>. Rights for the Trademarks lies with the respective Companies/Brands,
+    </p>
+
+    <!-- 
+    Der Script Block unter diesem Kommentar ist der Code, den man von Font Awseome erhält. Wir ihr seht, wird das in diesem Fall mit JavaScript gelöst, welches auf einem Server von Font Awesome gehostet ist. Das ist so ähnlich (aber anders) als die 'alte' Lösung, die so wie bei Google Fonts zu einem bei Font Awesome gehosteten Stylesheet führte. Die funktioniert derzeit auch noch irgendwie, aber nicht so zuverlässig. Font Awesome gehen diesen Weg vermutlich, um mehr Kontrolle zu erhalten, wer ihre Icons benutzt, denn die JavaScript Lösung geht nur mit einem Account dort.
+    Die beste Lösung zur Einbindung ist allerdings, die Icon Font lokal auf seinem eigenen Server zu hosten. Das ist aus DSGVO Gründen allem anderen vorzuziehen und auch gar kein Problem, denn die Dateien werden von Font Awesome zum Download zur Verfügung gestellt -- auch ohne Account. Das ist in diesem kleinen Demo hier alledrings nicht so implementiert.
+    -->
+    <script src="https://kit.fontawesome.com/0257bf6bef.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
